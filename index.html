@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en-CA"> 
+   <body>
+   <head>
+      <link rel="icon" type="image/x-icon" href="/images/snow_removel.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>gee's snow snow removel</title>
+      <link rel="stylesheet" href="style_sheet_3.css">
+   </head>
+     
+   <header>
+    <img src="/images/snow_removel.png" alt ="" style ="width:20%;height:20%;">
+    <h1>gee's snow removal</h1>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li><br><br>
+        <li><a href="/linked_HTML_pages/page2.html">Contact</a></li><br><br>
+        <li><a href="/linked_HTML_pages/page3.html">About</a></li><br><br>
+        <li><a href="/linked_HTML_pages/about me/about_me.html">About the owner</a></li><br><br>
+      </ul>
+    </nav>
+    <article>
+      <h2>Edmonton loves us</h2>
+      <p>we are the number one snow removel company in Edmonton</p>
+      <p>everyone gives us 5 stars</p>
+      <p>clear time is 1 or 2 hours</p>
+      <p>dont be like this guy</p>
+      <img src="/images/snowy_car.jfif" alt = "" style="width: 30%;height: 50%;"><br>
+      <script>
+        function snow(sw) {
+          var pic;
+          if (sw == 0) {
+            pic = "/images/snowy_driveway.jfif"
+          } else {
+            pic = "/images/not_snowy_driveway.jfif"
+          }
+          document.getElementById('snow').src = pic;
+        }
+        </script>
+        <img id="snow" src="/images/snowy_driveway.jfif" width="35%" height="35%">
+        <p>
+        <button type="button" onclick="snow(1)">cleared driveway</button>
+        <button type="button" onclick="snow(0)">snow on driveway</button>
+        </p>
+        <noscript>Sorry, your browser does not support JavaScript</noscript>
+    </article>
+  </section>
+  
+  <footer>
+    <p></p>
+  </footer>
+  
+  </body>
+</html>
+
